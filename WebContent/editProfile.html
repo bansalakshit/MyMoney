@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    float: left;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 20px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.b{
+    background-color: black; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.a{
+    background-color: white; 
+    border: none;
+    color: blacl;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+
+<div class="navbar">
+  <a href="login.html">HOME &nbsp&nbsp&nbsp&nbsp  |</a>                  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <a href="wallet.html">WALLET &nbsp&nbsp&nbsp&nbsp  |</a>       &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <a href="T & C.html">TERMS & CONDITIONS &nbsp&nbsp&nbsp&nbsp  |</a>       &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <a href="about.html">ABOUT US &nbsp&nbsp&nbsp&nbsp  |</a>    
+  
+ <div class="dropdown">
+    <button class="dropbtn">DROPDOWN 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="login.html">HOME</a>
+      <a href="logout.html">LOGOUT</a>
+    </div>
+  </div>
+
+</div>
+
+</header>
+
+<center><b><font size="8">EDIT PROFILE</font></b></center>
+
+<div class="container">
+
+  <img src="images/C.jpg" style="width:100%;">
+
+<div class="centered">
+
+		<font size="5"><b>Email:</b></font>             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp&nbsp   	<a href="editEmail.html"><input type="button" value="EDIT" class="b"></a><br><br>
+		<font size="5"><b>Date of Birth:</b></font>     &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;    									<a href="editDob.html"><input type="button" value="EDIT" class="b"></a><br><br>
+		<font size="5"><b>City:</b></font>              &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;    <a href="editCity.html"><input type="button" value="EDIT" class="b"></a><br><br>
+		<font size="5"><b>Contact no:</b></font>        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;     						<a href="editContact.html"><input type="button" value="EDIT" class="b"></a><br><br>
+		<font size="5"><b>Address:</b></font>           &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;    			<a href="editAddress.html"><input type="button" value="EDIT" class="b"></a><br><br><br>
+		<a href="login.html"><input type="button" value="BACK" class="a"></a>
+		
+</div>
+
+
+</div>
+
+</body>
+</html>

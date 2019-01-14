@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    float: left;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 20px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+.a{
+    background-color: red; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+
+<div class="navbar">
+
+
+ <div class="dropdown">
+    <button class="dropbtn">
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+     
+    </div>
+  </div>
+
+</div>
+
+
+</header>
+
+<center><b><font size="8">PERSONAL INFORMATION</font></b></center>
+
+<div class="container">
+
+  <img src="images/C.jpg" style="width:100%;">
+
+<div class="centered">
+	
+		<font size="6"><u><b>NOTE:</b></u></font><font size="5"><p text align="left">You can use only <u>VISA</u> or <u>MASTER</u> card.</p>
+										  						<p text align="left"><u>VISA(Format)</u>&emsp;&emsp;:4XXX XXXX XXXX XXXX</p>
+										  						<p text align="left"><u>MASTER(Format)</u> :5(1-5)XX XXXX XXXX XXXX</p></font><br><br><br>
+										  
+		<font size="7"><b><u>PAGE 2:Debit Card</u></b></font><br><br><br><br>
+				
+				<form method="post" action="insert2">
+				<table> 
+				<tr><th align="left"><font size="5"><b>Card no:</b></font></th><td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input type="text" name="dcn" size="25" maxlength="16" pattern="4[0-9]{15}|5[1-5][0-9]{14}" required></td></tr>
+				<tr><td><br></td></tr> 
+				<tr><th align="left"><font size="5"><b>Valid upto:</b></font></th><td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input type="text" name="dvut" size="10" pattern="(0?[1-9]|1[012])/\d{4}" required><b>(mm/yyyy)</b></td></tr>
+				<tr><td><br></td></tr>
+				<tr><th align="left"><font size="5"><b>CVV:</b></font></th><td><input type="password" name="dcvv" size="6" maxlength="3" pattern="[0-9]{3}" required></td></tr> 
+				</table>
+				<br><br><br><br>
+				<input type="submit" value="NEXT" class="a">&emsp;&emsp;&emsp;
+				<a href="insertedpage1.html"><input type="button" value="BACK" class="a"></a>&emsp;&emsp;&emsp;
+				<a href="index.html"><input type="button" value="CANCEL" class="a"></a>&emsp;&emsp;&emsp;
+				<a href="insertedpage3.html"><input type="button" value="SKIP" class="a"></a>
+				</form>
+				
+				
+				
+				
+</div>
+
+
+</div>
+
+</body>
+</html>

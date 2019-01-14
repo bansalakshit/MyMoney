@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  
+<servlet>
+  	<servlet-name>s1</servlet-name>
+  	<servlet-class>mypack.index</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>s1</servlet-name>
+    <url-pattern>/first</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>s2</servlet-name>
+  	<servlet-class>mypack.account</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>s2</servlet-name>
+    <url-pattern>/account</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>s3</servlet-name>
+  	<servlet-class>mypack.signup1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>s3</servlet-name>
+    <url-pattern>/insert1</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>s4</servlet-name>
+  	<servlet-class>mypack.signup2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>s4</servlet-name>
+    <url-pattern>/insert2</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>s5</servlet-name>
+  	<servlet-class>mypack.signup3</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>s5</servlet-name>
+    <url-pattern>/insert3</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>s6</servlet-name>
+  	<servlet-class>mypack.signup4</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>s6</servlet-name>
+    <url-pattern>/insert4</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>s7</servlet-name>
+  	<servlet-class>debitCard.dc</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>s7</servlet-name>
+    <url-pattern>/debit</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>s8</servlet-name>
+  	<servlet-class>debitCard.dc1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>s8</servlet-name>
+    <url-pattern>/debit1</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>s9</servlet-name>
+  	<servlet-class>clossAccount.closeAcc</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>s9</servlet-name>
+    <url-pattern>/close</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>s10</servlet-name>
+  	<servlet-class>request.balance</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>s10</servlet-name>
+    <url-pattern>/balance</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>s11</servlet-name>
+  	<servlet-class>amo.addMoney</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>s11</servlet-name>
+    <url-pattern>/wa</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>s12</servlet-name>
+  	<servlet-class>withdrawal.withdrawalMoney</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>s12</servlet-name>
+    <url-pattern>/wm</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>s13</servlet-name>
+  	<servlet-class>ew.wallet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>s13</servlet-name>
+    <url-pattern>/wallet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>s14</servlet-name>
+  	<servlet-class>mt.moneyTransfer</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>s14</servlet-name>
+    <url-pattern>/money</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>s15</servlet-name>
+  	<servlet-class>lout.logout</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>s15</servlet-name>
+    <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>s16</servlet-name>
+  	<servlet-class>creditCard.cc</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>s16</servlet-name>
+    <url-pattern>/credit</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>s17</servlet-name>
+  	<servlet-class>creditCard.cc1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>s17</servlet-name>
+    <url-pattern>/credit1</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>s18</servlet-name>
+  	<servlet-class>profile.p</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>s18</servlet-name>
+    <url-pattern>/profile</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>s19</servlet-name>
+  	<servlet-class>changePassword.password</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>s19</servlet-name>
+    <url-pattern>/changepassword</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>s20</servlet-name>
+  	<servlet-class>editProfile.name</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>s20</servlet-name>
+    <url-pattern>/name</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>s21</servlet-name>
+  	<servlet-class>editProfile.email</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>s21</servlet-name>
+    <url-pattern>/email</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>s22</servlet-name>
+  	<servlet-class>editProfile.dob</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>s22</servlet-name>
+    <url-pattern>/dob4</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>s23</servlet-name>
+  	<servlet-class>editProfile.city</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>s23</servlet-name>
+    <url-pattern>/city</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>s24</servlet-name>
+  	<servlet-class>editProfile.contact</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>s24</servlet-name>
+    <url-pattern>/contact</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>s25</servlet-name>
+  	<servlet-class>editProfile.address</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>s25</servlet-name>
+    <url-pattern>/address</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>s26</servlet-name>
+  	<servlet-class>request.bal</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>s26</servlet-name>
+    <url-pattern>/wb</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>s27</servlet-name>
+  	<servlet-class>profile.p</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>s27</servlet-name>
+    <url-pattern>/a1</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
